@@ -7,7 +7,7 @@ import java.util.Date;
  */
 
 public class Comment {
-    private int comment_id;
+    private static int comment_id;
     private String text;
     private String createdOn;
     private User author; // Door wie 
