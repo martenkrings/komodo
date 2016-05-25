@@ -16,9 +16,9 @@ public class Thread {
 
     private String createdOn;
     private User createdBy;
-    private Comment lastComment;
+    //private Comment lastComment;
     private int totalKudos;
-    private int totalComments;
+    //private int totalComments;
     private int totalViews;
     private int totalSubscribed;
 
@@ -28,6 +28,14 @@ public class Thread {
     public Thread() {
         thread_id = thread_id + 1; // thread id verhoogt met 1 ieder keer dat een nieuwe thread object aangemaakt wordt 
         createdOn = new Date().toString();
-        lastComment = comments.get(comments.size() - 1);
+        //lastComment = comments.get(comments.size() - 1);
+    }
+
+    public Comment getLastComment() { //waarom wil je dit?
+        return comments.get(comments.size() - 1);
+    }
+
+    public int getTotalComments() {
+        return comments.size();
     }
 } 
