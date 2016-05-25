@@ -8,7 +8,7 @@ import java.util.List;
  */
 
 public class Thread {
-    //private int thread_id;
+    private int thread_id;
 
     private String title;
     private String text;
